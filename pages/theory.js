@@ -15,18 +15,18 @@ function theory() {
             <br></br>
             ‘p’ is a large prime of the order of 1024 bits. ‘g’ is a generator of order p-1 in the group Z p*
             <br></br>
-            Alice chooses a large random number ‘x’ in the range 0 to p-1 and calculates R1 = gx mod p
+            Alice chooses a large random number ‘x’ in the range 0 to p-1 and calculates R1 = g^x mod p
             <br></br>
-            Bob chooses a large random number ‘y’ in the range 0 to p-1 and calculates R2 = gy mod p
+            Bob chooses a large random number ‘y’ in the range 0 to p-1 and calculates R2 = g^y mod p
             <br></br>
             Alice sends R1 to Bob and Bob sends R2 to Alice
             <br></br>
-            Alice Calculates K = (R2)x mod p
+            Alice Calculates K = R2^x mod p
             <br></br>
-            Bob Calculates K = (R1)y mod p
+            Bob Calculates K = R1^y mod p
             <br></br>
-            K = (g (pow)x mod p)y mod p = (g(pow)y mod p)x
- mod p = g(pow)xy mod p
+            K = (g^x mod p)^y mod p = (g^y mod p)^x
+ mod p = g^xy mod p
             <br></br>
             K is the symmetric key for the session
             <br></br>

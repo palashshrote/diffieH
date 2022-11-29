@@ -6,7 +6,7 @@ const obj = () => {
     <div className={styles.main}>
         <h1 className={styles.title}>Objective</h1>
         <p className={styles.description}>
-            To understand the DH-key exchange protocol
+        To understand the Diffie - Hellman mutual key exchange algorithm.
         </p>
     </div>
   )

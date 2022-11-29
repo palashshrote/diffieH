@@ -140,6 +140,19 @@
   border-radius: 10px;
 }
 
+.trns{
+  opacity: 0.2;
+}
+
+.content_bg {
+  /* margin: 50px 0; */
+  background-image: url('../public/crypto_bg.webp');
+  /* height: 500px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
