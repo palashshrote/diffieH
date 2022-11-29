@@ -7,16 +7,20 @@ const procedure = () => {
         <h1 className={styles.title}>Procedure</h1>
         <p className={styles.the_desc}>
         <ul>
-            <li>STEP 1 : Firstly,choose a large prime number p and a generator g for that prime.</li>
-            <li>STEP 2 : Secondly,both Alice and Bob generate their respective keys A and B. And (ga,gb) for their keys respectively.</li>   
-            <li>STEP 3 : Both Alice and bob exchange their ga,gb.</li>   
-            <li>STEP 4 : Finally,both calculate their public keys gab and gba repectively.</li>   
-            <li>STEP 5 : If both gab and gba are equal then Deffie-Hellman key exchange is verified.</li>   
-           
+            <li>STEP 1 : Choose a large prime number p and a generator g.</li>
+            <li>STEP 2 : Alice chooses large random numbers a and calculates R1 = g^a mod p  </li>   
+            <li>STEP 3 : Alice chooses large random numbers b and calculates R2 = g^b mod p</li>   
+            <li>STEP 4 : Alice sends R1 to Bob. Note that Alice does not send the value of a; she sends only R1.</li>   
+            <li>STEP 5 : Bob sends R2 to Alice. Again note that Bob does not send the value of b; he sends only R2.</li>   
+            <li>STEP 6 : Alice calculates Ka = R2^a mod p.</li>
+	<li>STEP 7 : Bob calculates Kb = R1^b mod p.</li>  
+	<li>STEP 8 : If Ka = Kb, Ka is the symmetric key for the session.</li>  
             
         </ul>
         </p>
-        
+        {/* <p className={styles.description}>
+            
+        </p> */}
     </div>
   )
 }
