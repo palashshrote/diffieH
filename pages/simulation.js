@@ -73,8 +73,8 @@ const simulation = () => {
     <div className={styles.container}>
       <Form
         name="basic"
-        labelCol={{ span: 8 }}
-        wrapperCol={{ span: 16 }}
+        labelCol={{ span: 10 }}
+        wrapperCol={{ span: 5 }}
         initialValues={{ remember: true }}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
@@ -99,7 +99,7 @@ const simulation = () => {
         </Form.Item>
 
         <Form.Item
-          label="Alice key"
+          label="Alice key, a"
           name="alicekey"
           rules={[{ required: true, message: 'alice key is blank' }]}
         >
@@ -107,7 +107,7 @@ const simulation = () => {
         </Form.Item>
 
         <Form.Item
-          label="Bob key"
+          label="Bob key, b"
           name="bobkey"
           rules={[{ required: true, message: 'Bob key is blank' }]}
         >
@@ -115,7 +115,7 @@ const simulation = () => {
         </Form.Item>
 
 
-        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+        <Form.Item wrapperCol={{ offset: 11, span: 16 }}>
           <Button type="primary" htmlType="submit">
             Submit
           </Button>
@@ -126,10 +126,10 @@ const simulation = () => {
             <h2>Alice</h2>
             <Input.Group compact>
               <Input id="aliceGeneratedGA" style={{ width: 'calc(100% - 200px)' }} />
-              <Button onClick={calculateGA} type="primary">Calculate Ga</Button>
+              <Button onClick={calculateGA} type="primary">Calculate R1</Button>
             </Input.Group>
             <br></br>
-            <Button onClick={sendA}>Send Ga to B</Button>
+            <Button onClick={sendA}>Send R1 to Bob</Button>
             <br></br>
             <br></br>
             <label>Received</label>
@@ -137,7 +137,7 @@ const simulation = () => {
             <br></br>
             <br></br>
             <Input.Group compact>
-              <Button onClick={calculateGAB} type="primary">Calculate Gab</Button>
+              <Button onClick={calculateGAB} type="primary">Calculate Ka</Button>
               <Input id="putGAB" style={{ width: 'calc(100% - 200px)' }} />
 
             </Input.Group>
@@ -147,10 +147,10 @@ const simulation = () => {
             <h2>Bob</h2>
             <Input.Group compact>
               <Input id="bobGeneratedGB" style={{ width: 'calc(100% - 200px)' }} />
-              <Button onClick={calculateGB} type="primary">Calculate Gb</Button>
+              <Button onClick={calculateGB} type="primary">Calculate R2</Button>
             </Input.Group>
             <br></br>
-            <Button onClick={sendB}>Send Gb to A</Button>
+            <Button onClick={sendB}>Send R2 to Alice</Button>
             <br></br>
             <br></br>
             <label>Received</label>
@@ -158,7 +158,7 @@ const simulation = () => {
             <br></br>
             <br></br>
             <Input.Group compact>
-              <Button onClick={calculateGBA} type="primary">Calculate Gba</Button>
+              <Button onClick={calculateGBA} type="primary">Calculate Kb</Button>
               <Input id="putGBA" style={{ width: 'calc(100% - 200px)' }} />
 
             </Input.Group>
