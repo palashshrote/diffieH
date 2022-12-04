@@ -57,6 +57,14 @@ function calculateGBA() {
   let currentPrime = obj.primenumber;
   let value = powAndMod(Ga, b, currentPrime);
   document.getElementById("putGBA").value = value;
+  if(value === document.getElementById("putGAB").value){
+    console.log(value);
+    console.log(document.getElementById("putGAB").value);
+    alert('Correct');
+  }
+  else{
+    alert('Not Correct');
+  }
 }
 
 const onFinish = (values) => {

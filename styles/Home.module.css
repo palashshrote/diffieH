@@ -51,6 +51,9 @@
   font-size: 2rem;
   font-weight: normal;
 }
+.myImg{
+  margin-top: 100;
+}
 
 .title,
 .description {
@@ -67,6 +70,10 @@
   line-height: 1.5;
   font-size: 1.5rem;
   text-align: justify;
+}
+.the_video{
+  text-align: center;
+  align-items: center;
 }
 
 .code {

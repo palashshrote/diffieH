@@ -6,11 +6,11 @@ function theory() {
   return (
     <div className={styles.main}>
         <h1 className={styles.title}>Theory</h1>
-        <p className={styles.the_desc}>
+        <div className={styles.the_desc}>
             Diffie-Hellman protocol allows two communicating parties, say Alice and Bob, to create a symmetric session key with out the need of a KDC (Key Distribution Center).
-        </p>
+        </div>
         <h2 className={styles.sub_title}>Diffie-Hellman Protocol</h2>
-        <p className={styles.the_desc}>
+        <div className={styles.the_desc}>
             Alice and Bob chose two numbers p and g which are public.
             <br></br>
             ‘p’ is a large prime of the order of 1024 bits. ‘g’ is a generator of order p-1 in the group [Z p*, X]
@@ -31,7 +31,7 @@ function theory() {
             K is the symmetric key for the session
             <br></br>
             <Image priority className={styles.myImg} width={600} height={700} alt='No_img' src='/diffieH_img.png'/>
-        </p>
+        </div>
         
     </div>
   )
