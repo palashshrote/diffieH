@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
-import Image from 'next/image'
+import Footer from '../components/Footer'
+
 
 const aim = () => {
   return (
-    // <div className={styles.content_bg}>
+    <>
       <div className={styles.main}>
         
           
@@ -15,7 +16,8 @@ const aim = () => {
 
         
       </div>
-    // </div>
+      <Footer/>
+    </>
   )
 }
 
