@@ -28,6 +28,9 @@
   flex-grow: 1;
 }
 
+.centr{
+  text-align: center;
+}
 .title a {
   color: #0070f3;
   text-decoration: none;
